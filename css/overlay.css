@@ -1,0 +1,82 @@
+#overlay {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: black;
+    z-index: 1;
+    display: none;
+}
+
+.gray-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    height: 265px;
+    width: 100%;
+    z-index: 10;
+    background: gray;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.close-overlay {
+    padding-top: 105px;
+
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#overlay-img {
+ 
+    width: 33%;
+    float: left;
+}
+
+#overlay-desc {
+    width: 67%;
+    float: right;
+    padding-left: 25px;
+
+}
+#overlay-img img {
+    border: solid 8px white;
+    width: 100%;
+}
+
+h2 {
+    margin: 15px 0px;
+    font-size: 1.67em;
+}
+
+h4 {
+    margin-bottom: 12px;
+}
+
+.plot {
+    padding-top: 15px;
+    color: black;
+}
+
+#overlay-plot {
+    margin-top: 0px;
+}
+
+.overlay-button {
+    background-color: MediumAquaMarine; 
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5%;
+    font-weight: bold;
+}
