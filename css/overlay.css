@@ -80,3 +80,7 @@ h4 {
     border-radius: 5%;
     font-weight: bold;
 }
+
+a:link, a:visited {
+    color: white;
+}

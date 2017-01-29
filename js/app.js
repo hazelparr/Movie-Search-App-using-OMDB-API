@@ -56,7 +56,7 @@ $("#submit").on("click", function(event){
        var overlay = '<div id="overlay"><div class="gray-background"><div class="main-content">';
         overlay += '<span class="clickable close-overlay">< Search Results</span>';
         overlay += '<div class="movie-contents"><div id="overlay-img"></div>';
-        overlay += '<div id="overlay-desc"><div><h2><span id="overlay-title"></span>';
+        overlay += '<div id="overlay-desc"><div><h2><span><a href="" target="_blank" id="overlay-title"></a></span>';
         overlay += '<span id="overlay-year"></span></h2><span id="overlay-rating"></span></div>';
         overlay += '<div class="plot"><h4>Plot Synopsis:</h4><p id="overlay-plot"></p>';
         overlay += '<a href="" class="overlay-button" target="_blank">View on IMDB</a></div></div></div>';
@@ -93,6 +93,7 @@ $("#submit").on("click", function(event){
                 $("#overlay").show();
                 $("#overlay-img").html('<img src="'+ pic +'">');
                 $("#overlay-title").text(title);
+                $("#overlay-title").attr("href", "http://www.imdb.com/title/" + IMDBID);
                 $("#overlay-year").text(" (" + year + ")");
                 $("#overlay-rating").text("IMDB Rating: " + IMDBRating);
                 $("#overlay-plot").text(plot);
