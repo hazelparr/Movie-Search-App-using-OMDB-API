@@ -11,7 +11,7 @@ $("#submit").on("click", function(event){
         r: "json",
         y: year,
         callback: "",
-        type: "movie",
+        
 
     };
 
